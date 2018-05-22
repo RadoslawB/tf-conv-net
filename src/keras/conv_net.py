@@ -10,7 +10,7 @@ def conv_model(input_shape, classes):
     :param classes: number of possible output classes (OHO)
     :return: build model ready to compile and fit
     '''
-    # Define the input placeholder as a tensor with shape input_shape. Think of this as your input image!
+
     X_input = Input(input_shape)
 
     # CONV -> BN -> RELU Block applied to X
@@ -33,7 +33,7 @@ def conv_model(input_shape, classes):
     X = Dense(1024, activation='relu', name='fc0')(X)
     X = Dense(classes, activation='sigmoid', name='fc1')(X)
 
-    # Create model. This creates your Keras model instance, you'll use this instance to train/test the model.
+    # Create model.
     model_ = Model(inputs=X_input, outputs=X, name='model')
 
     return model_

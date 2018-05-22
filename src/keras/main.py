@@ -1,5 +1,4 @@
 from keras import optimizers
-
 from keras.utils import to_categorical
 from src.utils import unpickle
 import keras
