@@ -2,7 +2,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
 from tensorflow.python.framework import ops
-from src.model_utils import random_mini_batches
+from src.tensorflow.model_utils import random_mini_batches
 
 
 def create_placeholders(n_H0, n_W0, n_C0, n_y):

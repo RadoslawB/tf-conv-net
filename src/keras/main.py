@@ -5,7 +5,7 @@ import keras
 import subprocess
 from src.utils import plot_imgs
 from src.keras.conv_net import conv_model
-from src.keras.res_net import ResNet50
+
 data = unpickle('../../cifar-10-batches/test_batch')
 
 X_train_orig = data[b'data']
@@ -17,8 +17,7 @@ classes = 10
 Y_train = to_categorical(Y_train_orig, classes)
 # plot_imgs(X_train, columns=4, rows=4)
 
-# model = conv_model(X_train.shape[1:], classes)
-model = ResNet50(X_train.shape[1:], classes)
+model = conv_model(X_train.shape[1:], classes)
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 
