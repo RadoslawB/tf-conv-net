@@ -6,7 +6,7 @@ import subprocess
 from src.utils import plot_imgs
 from src.keras.conv_net import conv_model
 
-data = unpickle('../../cifar-10-batches/test_batch')
+data = unpickle('../../cifar-10/test_batch')
 
 X_train_orig = data[b'data']
 Y_train_orig = data[b'labels']

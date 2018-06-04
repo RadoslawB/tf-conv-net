@@ -103,11 +103,4 @@ venv.bak/
 # mypy
 .mypy_cache/
 .idea/tf-conv-net.iml
-cifar-10-batches/batches.meta
-cifar-10-batches/data_batch_1
-cifar-10-batches/data_batch_2
-cifar-10-batches/data_batch_3
-cifar-10-batches/data_batch_4
-cifar-10-batches/data_batch_5
-cifar-10-batches/readme.html
-cifar-10-batches/test_batch
+dataset/*
